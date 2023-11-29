@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+marquee{
+    padding: 20px;
+    background-color: #e3e3e3;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: #4444;
+    padding: 10px;
+}
+
+input{
+    padding: 30px;
+    width: 100%;
+}
+
+.test1{
+    box-sizing: border-box;
+}
+
+img{
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+}
+
+body{
+    margin: 50px;
+}
+
+.animate{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-top: 100px;
+
+    /* ? Animation */
+
+    animation-name: circleee;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+    /* animation: circle 4s infinite forwards alternate; */
+}
+
+.anime{
+    animation-timing-function: linear;
+}
+
+@keyframes circleee{
+    from{
+        transform: translate(0) rotate(0);
+        /* width: 200px;
+        height: 200px; */
+        border-radius: 0;
+        background-color: red;
+    }
+
+    to{
+        transform: translate(1000px) rotate(360deg);
+        /* width: 100px;
+        height: 100px; */
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
+
+/* ? Vazifa */
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1500px;
+    gap: 30px;
+       
+}
+
+.head{
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    /* ? Animation */
+
+    animation: bobur 1.4s infinite  alternate forwards ;
+    animation-delay: 0s;
+}
+
+.one{
+    animation-delay: 0.5s;
+}
+
+.two{
+    animation-delay: 1s;
+}
+
+.three{
+    animation-delay: 1.5s;
+}
+
+.four{
+    animation-delay: 2s;
+}
+.five{
+    animation-delay: 2.5s;
+}
+
+@keyframes bobur{
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-25px);
+    }
+}
